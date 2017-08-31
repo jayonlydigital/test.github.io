@@ -1,0 +1,8 @@
+$(function() {
+	var currentTemperature;
+
+	$.getJSON("http://api.openweathermap.org/data/2.5/weather?q=Sydney,au&appid=3d2363042523c46eb86f30163a636f2c", function(result){
+	  currentTemperature = result.main.temp;
+	  console.log(currentTemperature);
+	});
+});	
